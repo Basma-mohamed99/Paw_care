@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             ApplicationRoutes.registerScreen: (context) => RegisterScreen(),
 
           },
-          initialRoute: ApplicationRoutes.registerScreen,
+          initialRoute: ApplicationRoutes.onBordingScreen,
 
         );
       },
