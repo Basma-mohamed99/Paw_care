@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:paw_care/presentation/on_bording_screen/on_bording_screen.dart';
 import 'core/application_routes.dart';
@@ -6,7 +7,15 @@ import 'presentation/home_screen/home_screen.dart';
 import 'presentation/login_screen/login_screen.dart';
 import 'presentation/register_screen/register_screen.dart';
 
-void main() => runApp(MyApp());
+void main()async {
+      WidgetsFlutterBinding.ensureInitialized();
+      await SystemChrome.setPreferredOrientations([
+        DeviceOrientation.portraitUp,
+      ]);
+      return runApp(MyApp());
+
+
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -25,7 +34,8 @@ class MyApp extends StatelessWidget {
             ApplicationRoutes.registerScreen: (context) => RegisterScreen(),
 
           },
-          initialRoute: ApplicationRoutes.onBordingScreen,
+          initialRoute: ApplicationRoutes.homeScreen,
+
 
         );
       },
