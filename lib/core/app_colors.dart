@@ -18,6 +18,7 @@ abstract class AppColors {
   static const Color iconColorOfCard3 = Color(0xffF4A261);
   static const Color card4 = Color(0xffE8F5E9);
   static const Color iconColorOfCard4 = Color(0xff57CC99);
+  static const Color orange = Color(0xffF4A261);
 
 
 }
