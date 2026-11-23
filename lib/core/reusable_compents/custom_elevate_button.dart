@@ -7,15 +7,18 @@ class CustomElevateButton extends StatelessWidget {
   Color forgroundcolor;
   Color backgroundColor;
   String title;
+  void Function() ?onTap;
 
   CustomElevateButton({required this.forgroundcolor,
     required this.backgroundColor,
-    required this.title});
+    required this.title,
+     this.onTap
+  });
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
 
-      onPressed: () {},
+      onPressed:onTap,
       style: ElevatedButton.styleFrom(
         padding: context.edgeInsets(vertical:17 ),
         backgroundColor: backgroundColor,

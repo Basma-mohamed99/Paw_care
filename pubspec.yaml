@@ -39,6 +39,12 @@ dependencies:
   introduction_screen: ^5.0.0
   flutter_svg: ^2.3.0
   google_fonts: ^9.0.0
+  firebase_auth: ^7.0.1
+  validate_phone_number: ^1.1.1
+  firebase_core: ^5.1.0
+  cloud_firestore: ^7.1.0
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.6
 
 dev_dependencies:
   flutter_test:
